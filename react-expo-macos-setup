@@ -1,0 +1,102 @@
+1. ✅ Install Node.js (Manually)
+Go to https://nodejs.org
+
+Download the LTS macOS Installer (.pkg file)
+
+Install by opening the downloaded file and following instructions
+
+After install, verify in Terminal:
+
+node -v
+npm -v
+
+
+2. 🧶 Install Yarn (Using npm)
+
+npm install -g yarn
+yarn -v
+
+3. 📦 Install Expo CLI (Global Tool for React Native)
+
+https://docs.expo.dev/more/expo-cli/
+
+You can still install the expo cli globally though not the current recommendation.
+The currently recommended method: using npx directly without a global installation. 
+Start by using npx expo <command> directly. It's the easiest way to get going without managing global installations. 
+If you run into specific needs for local CLI versions later, you can always adjust.
+
+If you still prefer to install expo-cli globally (though not the current recommendation):
+
+Open your terminal or Command Prompt.
+
+Run the global installation command:
+
+npm install -g expo-cli
+
+4. 🧑‍💻 Install Xcode
+Open the App Store, search for Xcode, and install
+
+Launch Xcode once and accept the license
+
+Install CLI tools:
+xcode-select --install
+
+
+5. 🤖 Install Android Studio
+Download from: https://developer.android.com/studio
+
+During setup, ensure you check the boxes for:
+
+Android SDK
+
+Android Emulator
+
+Android SDK Command-line Tools
+
+After install:
+
+Open Android Studio → Preferences → Appearance & Behavior → System Settings → Android SDK
+
+Note the SDK Location (usually: ~/Library/Android/sdk)
+
+6. 🛠 Create .zshrc File and Set Android Emulator Path
+a. Create the file if it does not exist:
+
+  touch ~/.zshrc
+
+b. Open the file for editing:
+
+  open -a TextEdit ~/.zshrc
+
+c. Add the following lines:
+
+# Android SDK Path
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+
+d. Save and close the file, then run:
+
+source ~/.zshrc
+
+7. 📱Set Up Android Emulator
+Open Android Studio → Device Manager → Create Device
+
+Choose a phone (Pixel, etc.), then download and install a system image (e.g., Android 13)
+
+Start the virtual device
+
+To test if the emulator works:
+
+adb devices
+
+8. 🚀 Create and Run a Sample Expo App
+
+npx create-expo-app myApp -t
+cd myApp
+npx expo start
+
+Press i to open in iOS simulator (if Xcode installed)
+Press a to open in Android emulator (if one is running)
