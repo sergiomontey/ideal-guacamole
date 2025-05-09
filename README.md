@@ -16,6 +16,7 @@ How to launch emulators and test your setup
 How to create your first React Expo TypeScript app
 
 ⚙️ Technologies Required
+
 Node.js (LTS)
 
 Yarn (via npm)
