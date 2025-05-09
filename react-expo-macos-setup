@@ -10,11 +10,14 @@ After install, verify in Terminal:
 node -v
 npm -v
 
-
 2. 🧶 Install Yarn (Using npm)
 
 npm install -g yarn
 yarn -v
+
+⚠️ Important Reminder
+Never run npm install or other npm commands with sudo unless absolutely necessary.
+It can create root-owned files that break your local environment.
 
 3. 📦 Install Expo CLI (Global Tool for React Native)
 
