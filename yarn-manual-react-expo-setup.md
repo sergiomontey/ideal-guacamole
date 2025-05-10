@@ -155,4 +155,4 @@ Use:
 
 ---
 
-🎥 For a full video walkthrough, check out the [MonteyCodes YouTube Channel](https://www.youtube.com/@MonteyCodes)
+🎥 For a full video walkthrough, check out the [MonteyCodes YouTube Channel](https://www.youtube.com/@sergiomontey)
